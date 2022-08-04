@@ -2,17 +2,17 @@
 
  
 class Universities {
-  String? alphaTwoCode;
-  List<String>? domains;
-  String? country;
-  List<String>? webPages;
-  String? name;
+  late String alphaTwoCode;
+  late List<String> domains;
+  late String country;
+  late List<String> webPages;
+  late String name;
 
   Universities(
-      {this.alphaTwoCode,
-      this.domains,
-      this.country,
-      this.webPages,
+      {required this.alphaTwoCode,
+      required this.domains,
+      required this.country,
+      required this.webPages,
      required this.name});
 
   Universities.fromJson(Map<String, dynamic> json) {
